@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="input-container">
+            <input type="text" id="location-input" placeholder="Enter location">
+            <button id="fetch-weather"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="weather-info" class="weather-info">
+            <!-- Weather data will be displayed here -->
+        </div>
+        <div id="hourly-forecast" class="forecast">
+            <h2>Hourly Forecast</h2>
+            <div class="forecast-grid">
+                <!-- Hourly forecast data will be displayed here -->
+            </div>
+        </div>
+        <div id="daily-forecast" class="forecast">
+            <h2>Daily Forecast</h2>
+            <div class="forecast-grid">
+                <!-- Daily forecast data will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

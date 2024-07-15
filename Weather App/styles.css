@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#location-input {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#fetch-weather {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#fetch-weather i {
+    font-size: 1.2em;
+}
+
+#fetch-weather:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.weather-info {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.weather-info h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.weather-info p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    animation: slideIn 1s ease-out;
+}
+
+.weather-info img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.forecast {
+    margin-top: 20px;
+}
+
+.forecast h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.forecast-grid div {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out, slideIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
